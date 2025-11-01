@@ -1,0 +1,560 @@
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* Divider Section */
+.divider {
+    padding: 10px;
+}
+
+.divider h4 {
+    color: #222;
+    font-weight:400;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    padding: 20px 12%;
+    border-bottom: 1px solid #ddd;
+}
+
+.divider h4 span {
+  color: #888;
+  text-transform: uppercase;
+}
+
+.divider a {
+  color: #222;
+}
+
+.divider a:hover {
+  color: #ec1d25;
+}
+
+
+/*  Blog Section */
+.blog {
+  background: #fff;
+  padding: 5rem 0;
+}
+
+.blog-container {
+  position: relative;
+  display: flex;
+}
+
+/* Left Column */
+.blog-card {
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.blog-card .img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  border-radius: 15px;
+}
+
+.blog-card:hover img {
+  transform: scale(1.05);
+}
+
+.date-banner {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #ec1d25;
+  color: #fff;
+  text-align: center;
+  padding: 6px 12px;
+  border-radius: 10px;
+  line-height: 1.2;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.date-banner h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.date-banner h5 {
+  font-size: 0.8rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.blog-content .blog-title {
+
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #222;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-content a:first-child:hover {
+  color: #ec1d25;
+}
+
+.blog-content h6 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  word-spacing: 3px;
+  color: #888;
+  margin: 0.5rem 0 1rem;
+}
+
+.blog-content p {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.blog-content .btn {
+  border: none;
+  background: transparent;
+  color: #222;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.blog-content .btn:hover {
+  color: #ec1d25;
+}
+
+.blog .row {
+  display: flex;
+  align-items: stretch !important;
+}
+
+.blog-left {
+  border-right: 1px solid #ddd;
+  padding-right: 50px !important;
+  padding-left: 10px !important;
+}
+
+.blog-right {
+  padding-left: 30px !important;
+}
+
+
+/* Right Side */
+.blog-right {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.blog-right > div {
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.blog-right h3 {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.blog-search {
+    margin: 0 auto;
+}
+
+.blog-search .input-group .form-control {
+  border-radius: 0;
+  padding: 0.6rem 1rem;
+  box-shadow: none;
+  outline: none;
+  border: 2px solid #ddd;
+}
+
+.input-group .form-control::placeholder {
+  color: #aaaaaa;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.input-group .form-control:focus {
+  border: 2px solid #ec1d25;
+}
+
+.blog-search .input-group .btn {
+  border-radius: 0;
+  background: #222;
+  color: #fff;
+  border: none;
+}
+
+.blog-search .input-group .btn:hover,
+.blog-search .input-group .btn:active {
+  color: #ec1d25;
+  background: #222;
+}
+
+.categories ul,
+.archive-blog ul {
+  margin-top: 0.5rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+.list {
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
+  padding: 0.4rem 0;
+  color: #333;
+  text-align: left;
+}
+
+.list-item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.list-item:nth-of-type(1) {
+  border-top: 1px solid #eee;
+}
+
+.list-item a:hover {
+  color: #ec1d25 !important;
+}
+
+.popular-blogs .blog-post {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.popular-blogs .pop-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.popular-blogs img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pop-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.popular-blogs .pop-info .blog-title {
+  display: block;
+  white-space: nowrap;
+  color: #222;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.popular-blogs .pop-info .blog-title:hover {
+  color: #ec1d25;
+}
+
+.popular-blogs .pop-info p {
+  text-align: left;
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #777;
+  margin-left: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .blog {
+    padding: 3rem 0;
+  }
+
+  .blog-container {
+    flex-direction: column;
+  }
+
+  .blog-left {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+  }
+
+  .blog-right {
+    padding-left: 0 !important;
+  }
+
+  .blog-card img {
+    height: 320px;
+  }
+
+  .blog-content .blog-title {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  .blog-content p {
+    font-size: 0.9rem;
+  }
+
+  .blog-right h3 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  .popular-blogs .pop-info .blog-title {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .divider h4 {
+    font-size: 11px;
+    padding: 15px 8%;
+  }
+
+  .blog {
+    padding: 3rem 1.5rem;
+  }
+
+  .blog-card img {
+    height: 280px;
+  }
+
+  .date-banner h2 {
+    font-size: 2rem;
+  }
+
+  .date-banner h5 {
+    font-size: 0.7rem;
+  }
+
+  .blog-content .blog-title {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+  }
+
+  .blog-content h6 {
+    font-size: 0.75rem;
+  }
+
+  .blog-content p {
+    font-size: 0.9rem;
+  }
+
+  .blog-right h3 {
+    font-size: 1.1rem;
+  }
+
+  .popular-blogs .pop-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .popular-blogs .pop-info p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .divider h4 {
+    font-size: 10px;
+    padding: 10px 6%;
+  }
+
+  .blog {
+    padding: 2.5rem 1rem;
+  }
+
+  .blog-card img {
+    height: 220px;
+  }
+
+  .date-banner {
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+  }
+
+  .date-banner h2 {
+    font-size: 1.6rem;
+  }
+
+  .date-banner h5 {
+    font-size: 0.65rem;
+  }
+
+  .blog-content .blog-title {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+
+  .blog-content h6 {
+    font-size: 0.7rem;
+  }
+
+  .blog-content p {
+    font-size: 0.85rem;
+  }
+
+  .blog-right h3 {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+  }
+
+  .popular-blogs .pop-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .popular-blogs .pop-info .blog-title {
+    font-size: 0.8rem;
+  }
+
+  .popular-blogs .pop-info p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .divider h4 {
+    font-size: 9px;
+    padding: 8px 4%;
+    letter-spacing: 1px;
+  }
+
+  .blog {
+    padding: 2rem 0.8rem;
+  }
+
+  .blog-card img {
+    height: 180px;
+    border-radius: 10px;
+  }
+
+  .date-banner {
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    border-radius: 8px;
+  }
+
+  .date-banner h2 {
+    font-size: 1.3rem;
+  }
+
+  .date-banner h5 {
+    font-size: 0.6rem;
+  }
+
+  .blog-content .blog-title {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  .blog-content h6 {
+    font-size: 0.65rem;
+    text-align: center;
+  }
+
+  .blog-content p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .blog-content .btn {
+    display: block;
+    margin: 1rem auto;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+
+  .blog-right h3 {
+    font-size: 0.9rem;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .popular-blogs .blog-post {
+    align-items: center;
+    gap: 8px;
+  }
+
+  .popular-blogs .pop-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .popular-blogs .pop-info {
+    text-align: center;
+  }
+
+  .popular-blogs .pop-info .blog-title {
+    font-size: 0.75rem;
+    white-space: normal;
+  }
+
+  .popular-blogs .pop-info p {
+    font-size: 0.75rem;
+  }
+
+  .list-item {
+    font-size: 0.7rem;
+    padding: 8px 0;
+    letter-spacing: 1px;
+  }
+
+  .blog-search .input-group .form-control {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .blog-search .input-group .btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+  }
+}

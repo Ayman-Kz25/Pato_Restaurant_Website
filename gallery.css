@@ -1,0 +1,233 @@
+.gallery-container .btns .btn {
+  border: none;
+  border-radius: 12px;
+  margin: 0 12px;
+  padding: 4px 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.btns .btn.active,
+.btns .btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.gallery-container .gallery-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 300px;
+  transition: all 0.4s ease-in-out;
+}
+
+.gallery-container .gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gallery-container .gallery-img:hover img {
+  transform: scale(1.1);
+}
+
+/* ==== Image Overlay Hover Effect ==== */
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 300px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.img-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay effect */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.img-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+/* Search Icon */
+.icon i {
+    background: none;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.icon {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+  color: #000;
+  font-size: 1rem;
+  padding: 12px;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #ec1d25;
+  text-decoration: none;
+}
+
+
+.num-row .num {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.num.active,
+.num:hover {
+    background: #333;
+    border: 1px solid #ddd;
+    color: #fff;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+  .gallery-container .btns .btn {
+    margin: 0 8px;
+    padding: 5px 12px;
+    font-size: 0.95rem;
+  }
+
+  .img-wrapper,
+  .gallery-container .gallery-img {
+    height: 260px;
+  }
+
+  .gallery-container {
+    padding: 2rem 3rem;
+  }
+
+  .num-row .num {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container .btns {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    padding: 2rem;
+  }
+
+  .gallery-container .btns .btn {
+    font-size: 0.9rem;
+    margin: 4px 6px;
+    padding: 6px 12px;
+  }
+
+  .img-wrapper,
+  .gallery-container .gallery-img {
+    height: 230px;
+  }
+
+  .icon {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .num-row {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .num-row .num {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-container {
+    padding: 1rem;
+  }
+
+  .gallery-container .btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 0;
+  }
+
+  .gallery-container .btns .btn {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .img-wrapper,
+  .gallery-container .gallery-img {
+    height: 200px;
+  }
+
+  .icon {
+    padding: 9px;
+    font-size: 0.85rem;
+  }
+
+  .num-row {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .num-row .num {
+    font-size: 0.8rem;
+    padding: 5px 9px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  .img-wrapper,
+  .gallery-container .gallery-img {
+    height: 180px;
+  }
+
+  .gallery-container .btns .btn {
+    font-size: 0.8rem;
+    width: 90%;
+  }
+
+  .icon {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .num-row .num {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+}

@@ -1,0 +1,169 @@
+.reservation {
+    background: #efefef;
+    padding: 4rem 0;
+}
+
+.reservation-container {
+  justify-content: center;
+}
+
+.reservation-form {
+  width: 90%;
+  padding: 3rem;
+}
+
+.reservation-form .form-label {
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  color: #333;
+}
+
+.reservation-form h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
+
+.reservation-form .res-btn {
+  display: block;
+  width: 35%;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.reservation-info {
+    background: #efefef;
+    padding: 4rem 8rem;
+}
+
+.info-container h3{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.info-container p {
+    color: #555;
+    padding-top: 12px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Large Tablets (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .reservation-form {
+    width: 80%;
+    padding: 2.5rem;
+  }
+
+  .reservation-info {
+    padding: 3rem 4rem;
+  }
+
+  .reservation-form h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .reservation-form {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .reservation-form h1 {
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+  }
+
+  .reservation-info {
+    padding: 3rem 2.5rem;
+  }
+
+  .info-container .res-btn {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .info-container h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .info-container p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation-form {
+    width: 95%;
+    padding: 1.8rem;
+  }
+
+  .reservation-form h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .reservation-form .form-label {
+    font-size: 0.95rem;
+  }
+
+  .reservation-form button {
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+  }
+
+  .reservation-info {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .info-container h3 {
+    font-size: 1.1rem;
+  }
+
+  .info-container p {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .reservation-form {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .reservation-form h1 {
+    font-size: 1.7rem;
+  }
+
+  .reservation-form h3 {
+    font-size: 1rem;
+  }
+
+  .reservation-info {
+    padding: 2rem 1rem;
+  }
+
+  .info-container p {
+    font-size: 0.85rem;
+  }
+
+  .info-container h3 {
+    font-size: 1rem;
+  }
+}

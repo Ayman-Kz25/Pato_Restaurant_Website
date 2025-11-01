@@ -1,0 +1,346 @@
+.story {
+  background: #f5f2eb;
+}
+
+.story h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.story p {
+  width: 70%;
+  color: #777;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+
+.story-intro {
+  height: 50vh;
+  background: url(./assets/header-menu-01.jpg) center center / cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.story-intro-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin: 0 auto;
+}
+
+.story-intro-content h2 {
+  font-family: "Courgette", cursive;
+  font-size: 2.5rem;
+  color: #ec1d25;
+}
+
+.story-intro .btn {
+  margin-top: 20px;
+  transition: all 0.3s ease-out;
+}
+
+.story-intro .btn:hover {
+  background: rgba(187, 31, 36, 0.756) !important;
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
+.recipe {
+  padding: 4rem;
+  z-index: 1;
+  background: #eeeeee;
+}
+
+.recipe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 4rem;
+}
+
+.recipe-container .recipe-content h2 {
+  font-family: "Courgette", cursive;
+  color: #bb1f23;
+}
+
+.recipe-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.recipe-content p {
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.recipe-img {
+  position: relative;
+  display: inline-block;
+  height: 400px;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.recipe-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transform-origin: center;
+}
+
+.recipe-img:hover img {
+  transform: scale(1.1);
+}
+
+.restaurant-intro {
+  height: 80vh;
+  background: url(./assets/bg-cover-video-02.jpg) center center / cover
+    no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.chef {
+  position: relative;
+  background: #fff;
+  padding: 100px 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.chef-header h3 {
+  font-family: "Courgette", cursive;
+  color: #ec1d25;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.chef-header h1 {
+  font-size: 3.3rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 3rem;
+}
+
+.chef-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.chef-card {
+  margin-top: 3rem;
+  width: 350px;
+  max-height: 300px;
+  border: 2px solid #ddd !important;
+  border-radius: 10px !important;
+}
+
+/* Blog Image Box */
+.chef-card .card-img {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 14px;
+}
+
+.chef-card .card-img img {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #bb1f23;
+  display: block;
+  top: -105px;
+  left: 70px;
+  transition: transform 0.6s ease;
+  z-index: 100;
+}
+
+.chef-card .card-img:hover img {
+  transform: scale(1.05);
+}
+
+/* Blog Content */
+.chef-card h3 {
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.chef-card h3:hover {
+  color: #ec1d25;
+}
+
+.chef-card h5 {
+  font-size: 0.85rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.chef-card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+  .story h1 {
+    font-size: 2.8rem;
+  }
+  .story p {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .story-intro {
+    height: 45vh;
+  }
+  .story-intro-content h1 {
+    font-size: 3rem;
+    letter-spacing: 6px;
+  }
+  .recipe {
+    padding: 3rem 2rem;
+  }
+  .recipe-img {
+    height: 350px;
+  }
+  .chef-header h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .story h1 {
+    font-size: 2.5rem;
+  }
+  .story p {
+    width: 90%;
+    font-size: 0.95rem;
+  }
+  .story-intro {
+    height: 40vh;
+    background-attachment: scroll;
+  }
+  .story-intro-content h1 {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+  }
+  .story-intro-content h2 {
+    font-size: 2rem;
+  }
+  .recipe-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .recipe-img {
+    height: 320px;
+    max-width: 90%;
+  }
+  .recipe-content h1 {
+    font-size: 2.5rem;
+  }
+  .chef-header h1 {
+    font-size: 2.5rem;
+  }
+  .chef-container {
+    gap: 1.5rem;
+  }
+  .chef-card {
+    width: 80%;
+  }
+  .chef-card .card-img img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 576px) {
+  .story-intro {
+    height: 35vh;
+  }
+  .story-intro-content h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+  .story-intro-content h2 {
+    font-size: 1.5rem;
+  }
+  .recipe {
+    padding: 2rem 1rem;
+  }
+  .recipe-content h1 {
+    font-size: 2rem;
+  }
+  .recipe-content p {
+    font-size: 0.9rem;
+  }
+  .recipe-img {
+    height: 260px;
+  }
+  .chef-header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  .chef-card {
+    width: 90%;
+  }
+  .chef-card h3 {
+    font-size: 1.1rem;
+  }
+  .chef-card p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .story h1 {
+    font-size: 2rem;
+  }
+  .story p {
+    font-size: 0.9rem;
+    width: 95%;
+  }
+  .recipe-content h1 {
+    font-size: 1.8rem;
+  }
+  .chef-card h3 {
+    font-size: 1rem;
+  }
+}

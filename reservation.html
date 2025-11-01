@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reservation</title>
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.webp"
+            type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./menu.css" />
+        <link rel="stylesheet" href="./reservation.css">
+        <link rel="stylesheet" href="./vendors/Bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="./vendors/font-awesome/css/all.css" />
+    </head>
+
+    <body id="top">
+
+<!-- Spinner -->
+<div class="spinner-overlay" id="page-spinner">
+  <div class="spinner-border text-primary fs-6" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+        <!-- Header Section -->
+        <header>
+            <div class="container header-container">
+                <nav class="navbar navbar-expand-lg position-relative">
+                    <div class="container-fluid justify-content-center">
+                        <div class="navbar-brand">
+                            <img src="./assets/logo.png" alt />
+                        </div>
+                        <div
+                            class="collapse navbar-collapse d-none d-lg-flex justify-content-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link"
+                                        href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link" aria-current="page"
+                                        href="./menu.html">Menu</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link"
+                                        href="./reservation.html">Reservation</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link"
+                                        href="./gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link"
+                                        href="./about.html">About</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link"
+                                        href="./blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link"
+                                        href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-icons d-flex">
+                            <a href="#"><i
+                                    class="fa-solid fa-plane-departure social-icon"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-facebook-f social-icon"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-twitter social-icon"></i></a>
+                        </div>
+                        <button
+                            class="sidebar-toggler"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebarMenu"
+                            aria-controls="sidebarMenu">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
+                <div
+                    class="offcanvas offcanvas-end fade"
+                    tabindex="-1"
+                    id="sidebarMenu">
+                    <div class="offcanvas-header">
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./menu.html">Menu</a></li>
+                            <li><a href="./gallery.html">Gallery</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li>
+                                <a href="./reservation.html"
+                                    class="active">Reservation</a>
+                            </li>
+                        </ul>
+
+                        <div class="container gallery-grid">
+                            <div class="gallery-head">
+                                <h2>GALLERY</h2>
+                            </div>
+                            <div class="row img-grid">
+                                <img
+                                    src="./assets/photo-gallery-thumb-01.jpg"
+                                    alt
+                                    class="img-fluid gallery-img" />
+                                <img
+                                    src="./assets/photo-gallery-thumb-02.jpg"
+                                    alt
+                                    class="img-fluid gallery-img" />
+                                <img
+                                    src="./assets/photo-gallery-thumb-03.jpg"
+                                    alt
+                                    class="img-fluid gallery-img" />
+                            </div>
+                            <div class="row img-grid">
+                                <img
+                                    src="./assets/photo-gallery-thumb-05.jpg"
+                                    alt
+                                    class="img-fluid gallery-img" />
+                                <img
+                                    src="./assets/photo-gallery-thumb-06.jpg"
+                                    alt
+                                    class="img-fluid gallery-img" />
+                                <img
+                                    src="./assets/photo-gallery-thumb-07.jpg"
+                                    alt
+                                    class="img-fluid gallery-img" />
+                            </div>
+                            <div class="row img-grid">
+                                <img
+                                    src="./assets/photo-gallery-thumb-09.jpg"
+                                    alt
+                                    class="img-fluid gallery-img" />
+                                <img
+                                    src="./assets/photo-gallery-thumb-10.jpg"
+                                    alt
+                                    class="img-fluid gallery-img" />
+                                <img
+                                    src="./assets/photo-gallery-thumb-11.jpg"
+                                    alt
+                                    class="img-fluid gallery-img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-container">
+                <img src="./assets/bg-title-page-02.jpg" alt
+                    class="img-fluid" />
+                <h1>Reservation</h1>
+            </div>
+        </section>
+
+        <section class="reservation">
+            <div class="container d-flex reservation-container">
+                <div class="reservation-form">
+                    <h3>Reservation</h3>
+                    <h1>BOOK TABLE</h1>
+                    <form class="row">
+                        <div class="col-md-4">
+                            <label for="date" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="time" class="form-label">Time</label>
+                            <select class="form-select" name="time">
+                                <option selected>9:00</option>
+                                <option>9:30</option>
+                                <option>10:00</option>
+                                <option>10:30</option>
+                                <option>11:00</option>
+                                <option>11:30</option>
+                                <option>12:00</option>
+                                <option>12:30</option>
+                                <option>13:00</option>
+                                <option>13:30</option>
+                                <option>14:00</option>
+                                <option>14:30</option>
+                                <option>15:00</option>
+                                <option>15:30</option>
+                                <option>16:00</option>
+                                <option>16:30</option>
+                                <option>17:00</option>
+                                <option>17:30</option>
+                                <option>18:00</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="people"
+                                class="form-label">People</label>
+                            <select class="form-select" name="people">
+                                <option selected>1 Person</option>
+                                <option>2 People</option>
+                                <option>3 People</option>
+                                <option>4 People</option>
+                                <option>5 People</option>
+                                <option>6 People</option>
+                                <option>7 People</option>
+                                <option>8 People</option>
+                                <option>9 People</option>
+                                <option>10 People</option>
+                                <option>11 People</option>
+                                <option>12 People</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name"
+                                placeholder="Name">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="text" class="form-control" id="phone"
+                                placeholder="Phone">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control"
+                                placeholder="Email">
+                        </div>
+
+                        <div class="res-btn col-3">
+                            <button type="submit"
+                                class="btn bg-black text-white">Book
+                                Table</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="reservation-info">
+            <div class="container info-container">
+                <div class="row">
+                    <div class="col-12 col-md-6 p-5">
+                        <h3>Reserve by Phone</h3>
+                        <p>Donec quis euismod purus. Donec feugiat ligula
+                            rhoncus, varius nisl sed, tincidunt lectus. Nulla
+                            vulputate , lectus vel volutpat efficitur, orci
+                            lacus sodales sem, sit amet quam: <span
+                                class="text-primary">(001) 345 6889</span></p>
+                    </div>
+                    <div class="col-12 col-md-6 p-5">
+                        <h3>For Event Booking</h3>
+                        <p>Donec feugiat ligula rhoncus: <span
+                                class="text-primary">(001) 345 6889</span>,
+                            varius nisl sed, tinci-dunt lectus sodales sem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter py-5">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <!-- CONTACT COLUMN -->
+                    <div class="col-12 col-md-4">
+                        <div class="contact">
+                            <h3 class="fs-5 text-uppercase">Contact Us</h3>
+                            <div
+                                class="contact-grp d-flex align-items-center mb-3">
+                                <i
+                                    class="fa-solid fa-location-dot me-1 contact-icon"></i>
+                                <p class="mb-0">8th floor, 379 Hudson St, New
+                                    York, NY
+                                    10018</p>
+                            </div>
+                            <div
+                                class="contact-grp d-flex align-items-center mb-3">
+                                <i
+                                    class="fa-solid fa-phone me-1 contact-icon"></i>
+                                <p class="mb-0">(+1) 96 716 6879</p>
+                            </div>
+                            <div
+                                class="contact-grp d-flex align-items-center mb-3">
+                                <i
+                                    class="fa-solid fa-envelope me-1 contact-icon"></i>
+                                <p class="mb-0">contact@site.com</p>
+                            </div>
+                            <h3 class="fs-5 text-uppercase">Opening Times</h3>
+                            <div class="opening-times">
+                                <p class="mb-0">09:30 AM - 11:00 PM</p>
+                                <p class="mt-2">Every Day</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TWITTER COLUMN -->
+                    <div class="col-12 col-md-4">
+                        <div class="twitter">
+                            <h3 class="fs-5 text-uppercase">Latest Twitter</h3>
+
+                            <div class="tweet p-3">
+                                <p class="mb-1 text-primary">
+                                    <i
+                                        class="fa-brands fa-twitter text-white"></i>
+                                    @colorlib
+                                </p>
+                                <p class="mb-1">
+                                    Activello is a good option. It has a slider
+                                    built into
+                                    that
+                                    displays the featured image in the slider.
+                                </p>
+                                <a
+                                    href="https://buff.ly/2zaSfAQ"
+                                    class="small text-decoration-none">https://buff.ly/2zaSfAQ</a>
+                                <p class="date small mb-0 mt-2">21 JAN 2025</p>
+                            </div>
+
+                            <div class="tweet p-3">
+                                <p class="mb-1 text-primary">
+                                    <i
+                                        class="fa-brands fa-twitter text-white"></i>
+                                    @colorlib
+                                </p>
+                                <p class="mb-1">
+                                    Activello is a good option. It has a slider
+                                    built into
+                                    that
+                                    displays
+                                    <a
+                                        href="https://buff.ly/2zaSfAQ"
+                                        class="small text-decoration-none">https://buff.ly/2zaSfAQ</a>
+                                </p>
+                                <p class="date small mb-0 mt-2">21 MAY 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GALLERY COLUMN -->
+                    <div class="col-12 col-md-4">
+                        <div class="newsletter-gallery">
+                            <h2 class="mb-4 mt-3 fs-5">GALLERY</h2>
+
+                            <div class="row g-0 mb-2">
+                                <div class="col-4 mb-2">
+                                    <img
+                                        src="./assets/photo-gallery-thumb-01.jpg"
+                                        alt
+                                        class="img-fluid w-75" />
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img
+                                        src="./assets/photo-gallery-thumb-02.jpg"
+                                        alt
+                                        class="img-fluid w-75" />
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img
+                                        src="./assets/photo-gallery-thumb-03.jpg"
+                                        alt
+                                        class="img-fluid w-75" />
+                                </div>
+                            </div>
+
+                            <div class="row g-0 mb-2">
+                                <div class="col-4 mb-2">
+                                    <img
+                                        src="./assets/photo-gallery-thumb-05.jpg"
+                                        alt
+                                        class="img-fluid w-75" />
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img
+                                        src="./assets/photo-gallery-thumb-06.jpg"
+                                        alt
+                                        class="img-fluid w-75" />
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img
+                                        src="./assets/photo-gallery-thumb-07.jpg"
+                                        alt
+                                        class="img-fluid w-75" />
+                                </div>
+                            </div>
+
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img
+                                        src="./assets/photo-gallery-thumb-09.jpg"
+                                        alt
+                                        class="img-fluid w-75" />
+                                </div>
+                                <div class="col-4">
+                                    <img
+                                        src="./assets/photo-gallery-thumb-10.jpg"
+                                        alt
+                                        class="img-fluid w-75" />
+                                </div>
+                                <div class="col-4">
+                                    <img
+                                        src="./assets/photo-gallery-thumb-11.jpg"
+                                        alt
+                                        class="img-fluid w-75" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="social">
+                <a href="#"><i
+                        class="fa-solid fa-plane-departure social-icon"></i></a>
+                <a href="#"><i
+                        class="fa-brands fa-facebook-f social-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+            </div>
+            <div class="footer-content">
+                <p>
+                    @ 2017 Colorlib.
+                    <a href="#">Get The Theme</a>
+                </p>
+            </div>
+            <a href="#top" class="btn"><i class="fa fa-angle-double-up"></i></a>
+        </footer>
+
+        <script src="./vendors/Bootstrap/js/bootstrap.js"></script>
+        <script src="./vendors/font-awesome/js/all.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

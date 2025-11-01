@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.webp"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./menu.css" />
+    <link rel="stylesheet" href="./vendors/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./vendors/font-awesome/css/all.css" />
+  </head>
+
+  <body id="top">
+
+    <!-- Spinner -->
+<div class="spinner-overlay" id="page-spinner">
+  <div class="spinner-border text-primary fs-6" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+    <!-- Header Section -->
+    <header>
+      <div class="container header-container">
+        <nav class="navbar navbar-expand-lg position-relative">
+          <div class="container-fluid justify-content-center">
+            <div class="navbar-brand">
+              <img src="./assets/logo.png" alt />
+            </div>
+            <div
+              class="collapse navbar-collapse d-none d-lg-flex justify-content-center">
+              <ul class="navbar-nav">
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" aria-current="page"
+                    href="./menu.html">Menu</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="./reservation.html">Reservation</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav-icons d-flex">
+              <a href="#"><i
+                  class="fa-solid fa-plane-departure social-icon"></i></a>
+              <a href="#"><i
+                  class="fa-brands fa-facebook-f social-icon"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+            </div>
+            <button
+              class="sidebar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#sidebarMenu"
+              aria-controls="sidebarMenu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+        <div
+          class="offcanvas offcanvas-end fade"
+          tabindex="-1"
+          id="sidebarMenu">
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="list-unstyled">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li>
+                <a href="./reservation.html" class="active">Reservation</a>
+              </li>
+            </ul>
+
+            <div class="container gallery-grid">
+              <div class="gallery-head">
+                <h2>GALLERY</h2>
+              </div>
+              <div class="row img-grid">
+                <img
+                  src="./assets/photo-gallery-thumb-01.jpg"
+                  alt
+                  class="img-fluid gallery-img" />
+                <img
+                  src="./assets/photo-gallery-thumb-02.jpg"
+                  alt
+                  class="img-fluid gallery-img" />
+                <img
+                  src="./assets/photo-gallery-thumb-03.jpg"
+                  alt
+                  class="img-fluid gallery-img" />
+              </div>
+              <div class="row img-grid">
+                <img
+                  src="./assets/photo-gallery-thumb-05.jpg"
+                  alt
+                  class="img-fluid gallery-img" />
+                <img
+                  src="./assets/photo-gallery-thumb-06.jpg"
+                  alt
+                  class="img-fluid gallery-img" />
+                <img
+                  src="./assets/photo-gallery-thumb-07.jpg"
+                  alt
+                  class="img-fluid gallery-img" />
+              </div>
+              <div class="row img-grid">
+                <img
+                  src="./assets/photo-gallery-thumb-09.jpg"
+                  alt
+                  class="img-fluid gallery-img" />
+                <img
+                  src="./assets/photo-gallery-thumb-10.jpg"
+                  alt
+                  class="img-fluid gallery-img" />
+                <img
+                  src="./assets/photo-gallery-thumb-11.jpg"
+                  alt
+                  class="img-fluid gallery-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-container">
+        <img src="./assets/bg-title-page-01.jpg" alt class="img-fluid" />
+        <h1>Pato Menu</h1>
+      </div>
+    </section>
+
+    <section class="menu py-5 pt-5">
+      <div class="container menu-container p-4">
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-md-6 px-5">
+            <h4 class="menu-heading">Starters</h4>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Pine nut sbrisalona</h5>
+                <span class="dots"></span>
+                <span class="item-price">$29.79</span>
+              </div>
+              <p class="item-desc">Sed fermentum eros vitae eros</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Aenean eu</h5>
+                <span class="dots"></span>
+                <span class="item-price">$19.35</span>
+              </div>
+              <p class="item-desc">Feugiat maximus neque pharetra</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Sed feugiat</h5>
+                <span class="dots"></span>
+                <span class="item-price">$12.19</span>
+              </div>
+              <p class="item-desc">Proin lacinia nisl ut ultricies posuere
+                nulla</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Consectetur</h5>
+                <span class="dots"></span>
+                <span class="item-price">$21.89</span>
+              </div>
+              <p class="item-desc">Etiam cursus facilisis tortor</p>
+            </div>
+
+            <h4 class="menu-heading mt-5">Drinks</h4>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Vivamus pretium</h5>
+                <span class="dots"></span>
+                <span class="item-price">$29.79</span>
+              </div>
+              <p class="item-desc">Sed fermentum eros vitae eros</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Duis pharetra ligula</h5>
+                <span class="dots"></span>
+                <span class="item-price">$19.35</span>
+              </div>
+              <p class="item-desc">Feugiat maximus neque pharetra</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">In eu dolor</h5>
+                <span class="dots"></span>
+                <span class="item-price">$53.34</span>
+              </div>
+              <p class="item-desc">
+                Proin lacinia nisl ut ultricies posuere nulla
+              </p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Feugiat maximus</h5>
+                <span class="dots"></span>
+                <span class="item-price">$62.45</span>
+              </div>
+              <p class="item-desc">Sed fermentum eros vitae eros</p>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-6 px-5">
+            <h4 class="menu-heading">Main</h4>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Duis sed aliquet</h5>
+                <span class="dots"></span>
+                <span class="item-price">$31.18</span>
+              </div>
+              <p class="item-desc">
+                Proin lacinia nisl ut ultricies posuere nulla
+              </p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Suspendisse</h5>
+                <span class="dots"></span>
+                <span class="item-price">$70.25</span>
+              </div>
+              <p class="item-desc">Feugiat maximus neque pharetra</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Scelerisque sed</h5>
+                <span class="dots"></span>
+                <span class="item-price">$36.19</span>
+              </div>
+              <p class="item-desc">
+                Proin lacinia nisl ut ultricies posuere nulla
+              </p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Mollis nulla</h5>
+                <span class="dots"></span>
+                <span class="item-price">$19.50</span>
+              </div>
+              <p class="item-desc">
+                Proin lacinia nisl ut ultricies posuere nulla
+              </p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Convallis augue</h5>
+                <span class="dots"></span>
+                <span class="item-price">$29.15</span>
+              </div>
+              <p class="item-desc">Sed fermentum eros vitae eros</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Maecenas tristique</h5>
+                <span class="dots"></span>
+                <span class="item-price">$29.79</span>
+              </div>
+              <p class="item-desc">Feugiat maximus neque pharetra</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Duis tincidunt</h5>
+                <span class="dots"></span>
+                <span class="item-price">$19.35</span>
+              </div>
+              <p class="item-desc">
+                Proin lacinia nisl ut ultricies posuere nulla
+              </p>
+            </div>
+
+            <h4 class="menu-heading mt-5">Dessert</h4>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">tempus aliquet</h5>
+                <span class="dots"></span>
+                <span class="item-price">$9.79</span>
+              </div>
+              <p class="item-desc">
+                Proin lacinia nisl ut ultricies posuere nulla
+              </p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">scelerisque</h5>
+                <span class="dots"></span>
+                <span class="item-price">$19.35</span>
+              </div>
+              <p class="item-desc">Sed fermentum eros vitae eros</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-top">
+                <h5 class="item-title">Cras maximus</h5>
+                <span class="dots"></span>
+                <span class="item-price">$5.79</span>
+              </div>
+              <p class="item-desc">Duis pharetra ligula at urna dignissim</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lunch-intro">
+      <div class="lunch-intro-content">
+        <h1>LUNCH</h1>
+      </div>
+    </section>
+
+    <section class="lunch-menu py-5">
+      <div class="container lunch-container px-5">
+        <div class="row g-4">
+          <!-- Left Column -->
+          <div class="col-md-6">
+            <!-- Item 01 -->
+            <div class="row lunch-item align-items-center mb-4">
+              <div class="col-4 lunch-img p-2">
+                <img src="./assets/lunch-01.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 lunch-info">
+                <a href="#" class="item-title">Sed varius</a>
+                <p class="item-desc">Aenean pharetra tortor dui in
+                  pellentesque</p>
+                <span class="item-price">$29.79</span>
+              </div>
+            </div>
+
+            <!-- Item 03 -->
+            <div class="row lunch-item align-items-center mb-4">
+              <div class="col-4 lunch-img p-2">
+                <img src="./assets/lunch-03.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 lunch-info">
+                <a href="#" class="item-title">Tempus aliquet</a>
+                <p class="item-desc">Aenean condimentum ante erat</p>
+                <span class="item-price">$45.09</span>
+              </div>
+            </div>
+
+            <!-- Item 05 -->
+            <div class="row lunch-item align-items-center mb-4">
+              <div class="col-4 lunch-img p-2">
+                <img src="./assets/lunch-05.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 lunch-info">
+                <a href="#" class="item-title">Duis massa</a>
+                <p class="item-desc">Proin lacinia nisl ut ultricies posuere
+                  nulla</p>
+                <span class="item-price">$12.75</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-6">
+            <!-- Item 02 -->
+            <div class="row lunch-item align-items-center mb-4">
+              <div class="col-4 lunch-img p-2">
+                <img src="./assets/lunch-02.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 lunch-info">
+                <a href="#" class="item-title">Sbrisalona</a>
+                <p class="item-desc">Proin lacinia nisl ut ultricies posuere
+                  nulla</p>
+                <span class="item-price">$29.79</span>
+              </div>
+            </div>
+
+            <!-- Item 04 -->
+            <div class="row lunch-item align-items-center mb-4">
+              <div class="col-4 lunch-img p-2">
+                <img src="./assets/lunch-04.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 lunch-info">
+                <a href="#" class="item-title">Cras eget magna</a>
+                <p class="item-desc">Sed fermentum eros vitae eros</p>
+                <span class="item-price">$45.09</span>
+              </div>
+            </div>
+
+            <!-- Item 06 -->
+            <div class="row lunch-item align-items-center mb-4">
+              <div class="col-4 lunch-img p-2">
+                <img src="./assets/lunch-06.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 lunch-info">
+                <a href="#" class="item-title">Nullam maximus</a>
+                <p class="item-desc">Duis massa nibh porttitor nec imperdiet
+                  eget</p>
+                <span class="item-price">$12.75</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dinner-intro">
+      <div class="dinner-intro-content">
+        <h1>DINNER</h1>
+      </div>
+    </section>
+
+    <section class="dinner-menu py-5">
+      <div class="container dinner-container px-5">
+        <div class="row g-4">
+          <!-- Left Column -->
+          <div class="col-md-6">
+            <!-- Item 01 -->
+            <div class="row dinner-item align-items-center mb-4">
+              <div class="col-4 dinner-img p-2">
+                <img src="./assets/dinner-01.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 dinner-info">
+                <a href="#" class="item-title">Maecenas tristique</a>
+                <p class="item-desc">Aenean pharetra tortor dui in
+                  pellentesque</p>
+                <span class="item-price">$29.79</span>
+              </div>
+            </div>
+
+            <!-- Item 03 -->
+            <div class="row dinner-item align-items-center mb-4">
+              <div class="col-4 dinner-img p-2">
+                <img src="./assets/dinner-03.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 dinner-info">
+                <a href="#" class="item-title">Pine nut sbrisalona</a>
+                <p class="item-desc">Aenean condimentum ante erat</p>
+                <span class="item-price">$45.09</span>
+              </div>
+            </div>
+
+            <!-- Item 05 -->
+            <div class="row dinner-item align-items-center mb-4">
+              <div class="col-4 dinner-img p-2">
+                <img src="./assets/dinner-05.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 dinner-info">
+                <a href="#" class="item-title">Suspendisse eu</a>
+                <p class="item-desc">Proin lacinia nisl ut ultricies posuere
+                  nulla</p>
+                <span class="item-price">$12.75</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-6">
+            <!-- Item 02 -->
+            <div class="row dinner-item align-items-center mb-4">
+              <div class="col-4 dinner-img p-2">
+                <img src="./assets/dinner-02.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 dinner-info">
+                <a href="#" class="item-title">Cras maximus</a>
+                <p class="item-desc">Proin lacinia nisl ut ultricies posuere
+                  nulla</p>
+                <span class="item-price">$29.79</span>
+              </div>
+            </div>
+
+            <!-- Item 04 -->
+            <div class="row dinner-item align-items-center mb-4">
+              <div class="col-4 dinner-img p-2">
+                <img src="./assets/dinner-04.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 dinner-info">
+                <a href="#" class="item-title">Pine nut sbrisalona</a>
+                <p class="item-desc">Sed fermentum eros vitae eros</p>
+                <span class="item-price">$45.09</span>
+              </div>
+            </div>
+
+            <!-- Item 06 -->
+            <div class="row dinner-item align-items-center mb-4">
+              <div class="col-4 dinner-img p-2">
+                <img src="./assets/dinner-06.jpg" alt class="img-fluid">
+              </div>
+              <div class="col-8 dinner-info">
+                <a href="#" class="item-title">Tempor malesuada</a>
+                <p class="item-desc">Duis massa nibh porttitor nec imperdiet
+                  eget</p>
+                <span class="item-price">$12.75</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup">
+      <div class="signup-container">
+        <h3>SPECIALS SIGN UP</h3>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com" />
+          <label for="floatingInput">Email address</label>
+          <i class="fa-solid fa-envelope form-icon"></i>
+        </div>
+        <button class="btn bg-black text-white signup-btn">SIGN UP</button>
+      </div>
+    </section>
+
+    <section class="newsletter py-5">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <!-- CONTACT COLUMN -->
+          <div class="col-12 col-md-4">
+            <div class="contact">
+              <h3 class="fs-5 text-uppercase">Contact Us</h3>
+              <div class="contact-grp d-flex align-items-center mb-3">
+                <i class="fa-solid fa-location-dot me-1 contact-icon"></i>
+                <p class="mb-0">8th floor, 379 Hudson St, New York, NY
+                  10018</p>
+              </div>
+              <div class="contact-grp d-flex align-items-center mb-3">
+                <i class="fa-solid fa-phone me-1 contact-icon"></i>
+                <p class="mb-0">(+1) 96 716 6879</p>
+              </div>
+              <div class="contact-grp d-flex align-items-center mb-3">
+                <i class="fa-solid fa-envelope me-1 contact-icon"></i>
+                <p class="mb-0">contact@site.com</p>
+              </div>
+              <h3 class="fs-5 text-uppercase">Opening Times</h3>
+              <div class="opening-times">
+                <p class="mb-0">09:30 AM - 11:00 PM</p>
+                <p class="mt-2">Every Day</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TWITTER COLUMN -->
+          <div class="col-12 col-md-4">
+            <div class="twitter">
+              <h3 class="fs-5 text-uppercase">Latest Twitter</h3>
+
+              <div class="tweet p-3">
+                <p class="mb-1 text-primary">
+                  <i class="fa-brands fa-twitter text-white"></i> @colorlib
+                </p>
+                <p class="mb-1">
+                  Activello is a good option. It has a slider built into
+                  that
+                  displays the featured image in the slider.
+                </p>
+                <a
+                  href="https://buff.ly/2zaSfAQ"
+                  class="small text-decoration-none">https://buff.ly/2zaSfAQ</a>
+                <p class="date small mb-0 mt-2">21 JAN 2025</p>
+              </div>
+
+              <div class="tweet p-3">
+                <p class="mb-1 text-primary">
+                  <i class="fa-brands fa-twitter text-white"></i> @colorlib
+                </p>
+                <p class="mb-1">
+                  Activello is a good option. It has a slider built into
+                  that
+                  displays
+                  <a
+                    href="https://buff.ly/2zaSfAQ"
+                    class="small text-decoration-none">https://buff.ly/2zaSfAQ</a>
+                </p>
+                <p class="date small mb-0 mt-2">21 MAY 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- GALLERY COLUMN -->
+          <div class="col-12 col-md-4">
+            <div class="newsletter-gallery">
+              <h2 class="mb-4 mt-3 fs-5">GALLERY</h2>
+
+              <div class="row g-0 mb-2">
+                <div class="col-4 mb-2">
+                  <img
+                    src="./assets/photo-gallery-thumb-01.jpg"
+                    alt
+                    class="img-fluid w-75" />
+                </div>
+                <div class="col-4 mb-2">
+                  <img
+                    src="./assets/photo-gallery-thumb-02.jpg"
+                    alt
+                    class="img-fluid w-75" />
+                </div>
+                <div class="col-4 mb-2">
+                  <img
+                    src="./assets/photo-gallery-thumb-03.jpg"
+                    alt
+                    class="img-fluid w-75" />
+                </div>
+              </div>
+
+              <div class="row g-0 mb-2">
+                <div class="col-4 mb-2">
+                  <img
+                    src="./assets/photo-gallery-thumb-05.jpg"
+                    alt
+                    class="img-fluid w-75" />
+                </div>
+                <div class="col-4 mb-2">
+                  <img
+                    src="./assets/photo-gallery-thumb-06.jpg"
+                    alt
+                    class="img-fluid w-75" />
+                </div>
+                <div class="col-4 mb-2">
+                  <img
+                    src="./assets/photo-gallery-thumb-07.jpg"
+                    alt
+                    class="img-fluid w-75" />
+                </div>
+              </div>
+
+              <div class="row g-0">
+                <div class="col-4">
+                  <img
+                    src="./assets/photo-gallery-thumb-09.jpg"
+                    alt
+                    class="img-fluid w-75" />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./assets/photo-gallery-thumb-10.jpg"
+                    alt
+                    class="img-fluid w-75" />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./assets/photo-gallery-thumb-11.jpg"
+                    alt
+                    class="img-fluid w-75" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social">
+        <a href="#"><i
+            class="fa-solid fa-plane-departure social-icon"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+      </div>
+      <div class="footer-content">
+        <p>
+          @ 2017 Colorlib.
+          <a href="#">Get The Theme</a>
+        </p>
+      </div>
+      <a href="#top" class="btn"><i class="fa fa-angle-double-up"></i></a>
+    </footer>
+
+    <script src="./vendors/Bootstrap/js/bootstrap.js"></script>
+    <script src="./vendors/font-awesome/js/all.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

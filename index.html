@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="shortcut icon" href="./assets/favicon.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./event.css">
+  <link rel="stylesheet" href="./vendors/Bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="./vendors/font-awesome/css/all.css" />
+</head>
+
+<body id="top">
+   <!-- Spinner -->
+<div class="spinner-overlay" id="page-spinner">
+  <div class="spinner-border text-primary fs-6" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container header-container">
+      <nav class="navbar navbar-expand-xl position-relative">
+        <div class="container-fluid justify-content-between align-items-center">
+
+          <div class="navbar-brand">
+            <img src="./assets/logo.png" alt />
+          </div>
+
+          <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-3">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./menu.html">Menu</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./reservation.html">Reservation</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-icons d-flex">
+            <a href="#"><i class="fa-solid fa-plane-departure social-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+          </div>
+          <button class="sidebar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
+            aria-controls="sidebarMenu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-end fade" tabindex="-1" id="sidebarMenu">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="list-unstyled">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./reservation.html" class="active">Reservation</a></li>
+          </ul>
+
+          <div class="container gallery-grid">
+            <div class="gallery-head">
+              <h2>GALLERY</h2>
+            </div>
+            <div class="row img-grid">
+              <img src="./assets/photo-gallery-thumb-01.jpg" alt class="img-fluid gallery-img" />
+              <img src="./assets/photo-gallery-thumb-02.jpg" alt class="img-fluid gallery-img" />
+              <img src="./assets/photo-gallery-thumb-03.jpg" alt class="img-fluid gallery-img" />
+            </div>
+            <div class="row img-grid">
+              <img src="./assets/photo-gallery-thumb-05.jpg" alt class="img-fluid gallery-img" />
+              <img src="./assets/photo-gallery-thumb-06.jpg" alt class="img-fluid gallery-img" />
+              <img src="./assets/photo-gallery-thumb-07.jpg" alt class="img-fluid gallery-img" />
+            </div>
+            <div class="row img-grid">
+              <img src="./assets/photo-gallery-thumb-09.jpg" alt class="img-fluid gallery-img" />
+              <img src="./assets/photo-gallery-thumb-10.jpg" alt class="img-fluid gallery-img" />
+              <img src="./assets/photo-gallery-thumb-11.jpg" alt class="img-fluid gallery-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
+      data-bs-pause="hover">
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/slide1.jpg" alt />
+          <div class="carousel-caption">
+            <h3>Welcome to</h3>
+            <h1>PATO PLACE</h1>
+            <a class="btn bg-white text-danger" href="./menu.html">LOOK MENU</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/slide2.jpg" alt />
+          <div class="carousel-caption">
+            <h3>Welcome to</h3>
+            <h1>PATO PLACE</h1>
+            <a class="btn bg-white text-danger" href="./menu.html">LOOK MENU</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/slide3.jpg" alt />
+          <div class="carousel-caption">
+            <h3>Welcome to</h3>
+            <h1>PATO PLACE</h1>
+            <a class="btn bg-white text-danger" href="./menu.html">LOOK MENU</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls (using Font Awesome icons) -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <i class="fa-solid fa-chevron-left fa-2x" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <i class="fa-solid fa-chevron-right fa-2x" aria-hidden="true"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="container story-container">
+      <div class="story-content col-12 col-sm-12 col-md-6 w-50">
+        <h2>Italian Restaurant</h2>
+        <h1>Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+          distinctio consequuntur sed error at enim in hic perspiciatis.
+          Aperiam, alias!
+        </p>
+        <a class="btn" href="./about.html">
+          Our Story <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+      <div class="story-img col-12 col-lg-6">
+        <img src="./assets/our-story-01.jpg" alt class="img-fluid" />
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="intro-img">
+      <img src="./assets/bg-intro-01.jpg" alt class="img-fluid" />
+    </div>
+    <div class="intro-content">
+      <h2>Discover</h2>
+      <h1>Pato Place</h1>
+    </div>
+  </section>
+
+  <section class="featured">
+    <div class="container container-fluid featured-container">
+      <div class="featured-card">
+        <div class="card-img">
+          <img src="./assets/intro-01.jpg" alt class="img-fluid" />
+        </div>
+        <h1>Romantic Restaurant</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+          facilis.
+        </p>
+        <a class="btn" href="./index.html">
+          Learn More <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+
+      <div class="featured-card">
+        <div class="card-img">
+          <img src="./assets/intro-02.jpg" alt class="img-fluid" />
+        </div>
+        <h1>Delicious Food</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+          facilis.
+        </p>
+        <a class="btn" href="./index.html">
+          Learn More <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+
+      <div class="featured-card">
+        <div class="card-img">
+          <img src="./assets/intro-04.jpg" alt class="img-fluid" />
+        </div>
+        <h1>Red Wines You Love</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+          facilis.
+        </p>
+        <a class="btn" href="./index.html">
+          Learn More <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu">
+    <div class="container menu-container">
+      <div class="menu-content text-center mb-5">
+        <h4>Discover</h4>
+        <h1>Our Menu</h1>
+      </div>
+
+      <!-- Row 1 -->
+      <div class="row g-3 align-items-stretch menu-img">
+        <div class="col-12 col-lg-4 menu-card">
+          <div class="img-box">
+            <img src="./assets/our-menu-01.jpg" class="img-fluid" alt />
+            <div class="content">
+              <a class="btn" href="index.html">Lunch</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 menu-card">
+          <div class="img-box">
+            <img src="./assets/our-menu-05.jpg" class="img-fluid" alt />
+            <div class="content">
+              <a class="btn" href="index.html">dinner</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 d-flex flex-column justify-content-between">
+          <div class="img-box">
+            <img src="./assets/our-menu-08.jpg" class="img-fluid" alt />
+            <div class="content">
+              <a class="btn" href="index.html">drink</a>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./assets/our-menu-10.jpg" class="img-fluid" alt />
+            <div class="content">
+              <a class="btn" href="index.html">starters</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row g-3 align-items-stretch menu-img my-3">
+        <div class="col-12 col-lg-8">
+          <div class="img-box">
+            <img src="./assets/our-menu-13.jpg" class="img-fluid w-100" alt />
+            <div class="content">
+              <a class="btn" href="index.html">happy hour</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="img-box">
+            <img src="./assets/our-menu-16.jpg" class="img-fluid w-100" alt />
+            <div class="content">
+              <a class="btn" href="index.html">dessert</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events">
+    <div id="event-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
+      data-bs-pause="hover">
+      <!-- Slides -->
+      <div class="carousel-inner">
+
+        <!-- Event 01 -->
+        <div class="carousel-item active">
+          <img src="assets/bg-event-01.jpg" alt />
+          <div class="carousel-caption">
+            <h2>Upcoming</h2>
+            <h1>Events</h1>
+            <div class="event-card d-flex rounded-3 overflow-hidden shadow-lg" data-date="2025-12-31T23:59:59">
+              <!-- Left Rotated Date Strip -->
+              <div
+                class="event-date d-flex flex-column justify-content-center align-items-center text-white text-center">
+                <p class="rotate-text mb-0">
+                  08:00 PM TUESDAY - 21 NOVEMBER 2018
+                </p>
+              </div>
+              
+              <!-- Event Image -->
+              <div class="event-image flex-shrink-0">
+                <img src="./assets/event-02.jpg" alt="Event Image" class="img-fluid h-100 w-100 object-fit-cover" />
+              </div>
+
+              <!-- Event Content -->
+              <div class="event-details p-1 bg-white">
+                <h3 class="mb-3">Wines During Specific Nights</h3>
+                <p class="text-muted mb-4 event-info">
+                  Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet
+                  lacinia.
+                </p>
+                
+                <div class="countdown d-flex justify-content-between">
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">25</h1>
+                    <p class="fw-semibold text-uppercase small">Days</p>
+                  </div>
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">12</h1>
+                    <p class="fw-semibold text-uppercase small">Hours</p>
+                  </div>
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">59</h1>
+                    <p class="fw-semibold text-uppercase small">Minutes</p>
+                  </div>
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">46</h1>
+                    <p class="fw-semibold text-uppercase small">Seconds</p>
+                  </div>
+                </div>
+                
+                <a class="btn" href="./index.html">
+                  VIEW DETAILS <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Event 02 -->
+        <div class="carousel-item">
+          <img src="assets/bg-event-02.jpg" alt />
+          <div class="carousel-caption">
+            <h2>Upcoming</h2>
+            <h1>Events</h1>
+            <div class="event-card d-flex rounded-3 overflow-hidden shadow-lg" data-date="2026-7-15T23:59:59">
+              <!-- Left Rotated Date Strip -->
+              <div
+                class="event-date d-flex flex-column justify-content-center align-items-center text-white text-center">
+                <p class="rotate-text mb-0">
+                  08:00 PM TUESDAY - 21 NOVEMBER 2018
+                </p>
+              </div>
+              
+              <!-- Event Image -->
+              <div class="event-image flex-shrink-0">
+                <img src="./assets/event-06.jpg" alt="Event Image" class="img-fluid h-100 w-100 object-fit-cover" />
+              </div>
+
+              <!-- Event Content -->
+              <div class="event-details p-1 bg-white">
+                <h3 class="mb-3">Wines During Specific Nights</h3>
+                <p class="text-muted mb-4 event-info">
+                  Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet
+                  lacinia.
+                </p>
+
+                <div class="countdown d-flex justify-content-between">
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">25</h1>
+                    <p class="fw-semibold text-uppercase small">Days</p>
+                  </div>
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">12</h1>
+                    <p class="fw-semibold text-uppercase small">Hours</p>
+                  </div>
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">59</h1>
+                    <p class="fw-semibold text-uppercase small">Minutes</p>
+                  </div>
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">46</h1>
+                    <p class="fw-semibold text-uppercase small">Seconds</p>
+                  </div>
+                </div>
+
+                <a class="btn" href="./index.html">
+                  VIEW DETAILS <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 03 -->
+        <div class="carousel-item">
+          <img src="assets/bg-event-04.jpg" alt />
+          <div class="carousel-caption">
+            <h2>Upcoming</h2>
+            <h1>Events</h1>
+            <div class="event-card d-flex rounded-3 overflow-hidden shadow-lg" data-date="2025-11-25T23:59:59">
+              <!-- Left Rotated Date Strip -->
+              <div
+                class="event-date d-flex flex-column justify-content-center align-items-center text-white text-center">
+                <p class="rotate-text mb-0">
+                  08:00 PM TUESDAY - 21 NOVEMBER 2018
+                </p>
+              </div>
+
+              <!-- Event Image -->
+              <div class="event-image flex-shrink-0">
+                <img src="./assets/event-01.jpg" alt="Event Image" class="img-fluid h-100 w-100 object-fit-cover" />
+              </div>
+
+              <!-- Event Content -->
+              <div class="event-details bg-white">
+                <h3 class="mb-3">Wines During Specific Nights</h3>
+                <p class="text-muted mb-4 event-info">
+                  Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet
+                  lacinia.
+                </p>
+
+                <div class="countdown">
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">25</h1>
+                    <p class="fw-semibold text-uppercase small">Days</p>
+                  </div>
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">12</h1>
+                    <p class="fw-semibold text-uppercase small">Hours</p>
+                  </div>
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">59</h1>
+                    <p class="fw-semibold text-uppercase small">Minutes</p>
+                  </div>
+                  <div class="time-box text-center">
+                    <h1 class="text-danger fw-bold">46</h1>
+                    <p class="fw-semibold text-uppercase small">Seconds</p>
+                  </div>
+                </div>
+
+                <a class="btn" href="./index.html">
+                  VIEW DETAILS <i class="fa-solid fa-arrow-right-long ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls (using Font Awesome icons) -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#event-carousel" data-bs-slide="prev">
+        <i class="fa-solid fa-chevron-left fa-2x fs-5" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#event-carousel" data-bs-slide="next">
+        <i class="fa-solid fa-chevron-right fa-2x fs-5" aria-hidden="true"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#event-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#event-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#event-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="reservation">
+    <div class="container d-flex reservation-container">
+      <div class="reservation-form">
+        <h3>Reservation</h3>
+        <h1>BOOK TABLE</h1>
+        <form class="row">
+          <div class="col-md-6">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control" id="date">
+          </div>
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Name">
+          </div>
+          <div class="col-md-6">
+            <label for="time" class="form-label">Time</label>
+            <select class="form-select" name="time">
+										<option selected>9:00</option>
+										<option>9:30</option>
+										<option>10:00</option>
+										<option>10:30</option>
+										<option>11:00</option>
+										<option>11:30</option>
+										<option>12:00</option>
+										<option>12:30</option>
+										<option>13:00</option>
+										<option>13:30</option>
+										<option>14:00</option>
+										<option>14:30</option>
+										<option>15:00</option>
+										<option>15:30</option>
+										<option>16:00</option>
+										<option>16:30</option>
+										<option>17:00</option>
+										<option>17:30</option>
+										<option>18:00</option>
+									</select>
+          </div>
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="phone" placeholder="Phone">
+          </div>
+          <div class="col-md-6">
+            <label for="people" class="form-label">People</label>
+            <select class="form-select" name="people">
+              <option selected>1 Person</option>
+              <option>2 People</option>
+              <option>3 People</option>
+              <option>4 People</option>
+              <option>5 People</option>
+              <option>6 People</option>
+              <option>7 People</option>
+              <option>8 People</option>
+              <option>9 People</option>
+              <option>10 People</option>
+              <option>11 People</option>
+              <option>12 People</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="col-4">
+            <button type="submit" class="btn bg-black text-white">Book Table</button>
+          </div>
+        </form>
+      </div>
+      <div class="reservation-img w-50">
+        <div class="img-box">
+          <img src="./assets/booking-01.jpg" alt class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="review">
+    <div id="review-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"
+      data-bs-pause="hover">
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-caption">
+            <h3>Customers Say</h3>
+            <h1>Review</h1>
+            <div class="review-card">
+              <img src="./assets/avatar-01.jpg" alt class="img-fluid">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat nihil odit at, quasi obcaecati!
+              </p>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>MARIE SIMMONS - NEW YORK</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-caption">
+            <h3>Customers Say</h3>
+            <h1>Review</h1>
+            <div class="review-card">
+              <img src="./assets/avatar-04.jpg" alt class="img-fluid">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat nihil odit at, quasi obcaecati!
+              </p>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>MARIE SIMMONS - NEW YORK</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-caption">
+            <h3>Customers Say</h3>
+            <h1>Review</h1>
+            <div class="review-card">
+              <img src="./assets/avatar-05.jpg" alt class="img-fluid">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat nihil odit at, quasi obcaecati!
+              </p>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>MARIE SIMMONS - NEW YORK</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#review-carousel" data-bs-slide="prev">
+        <i class="fa-solid fa-chevron-left fa-2x fs-5" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#review-carousel" data-bs-slide="next">
+        <i class="fa-solid fa-chevron-right fa-2x fs-5" aria-hidden="true"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#review-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#review-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#review-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro video-intro">
+    <div class="intro-img">
+      <img src="./assets/bg-cover-video-02.jpg" alt class="img-fluid" />
+    </div>
+    <div class="intro-content">
+      <h2>Discover</h2>
+      <h1>Our Video</h1>
+      <a href="https://youtu.be/5k1hSu2gdKE" target="_blank" class="btn text-dark bg-white rounded-circle p-4"><i
+          class="fa-solid fa-play fs-5"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="blog-header">
+      <h3>Latest News</h3>
+      <h1>THE BLOG</h1>
+    </div>
+    <div class="container blog-container">
+      <div class="blog-card">
+        <div class="card-img">
+          <img src="./assets/blog-01.jpg" alt class="img-fluid" />
+          <p class="blog-date">21 SEP 2025</p>
+        </div>
+        <h1>Best Places for Wine</h1>
+        <p>
+          Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+        </p>
+        <a class="btn" href="./blog-detail.html">
+          Continue Reading <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+      <div class="blog-card">
+        <div class="card-img">
+          <img src="./assets/blog-02.jpg" alt class="img-fluid" />
+          <p class="blog-date">15 SEP 2025</p>
+        </div>
+        <h1>Eggs and Cheese</h1>
+        <p>
+          Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat
+        </p>
+        <a class="btn" href="./blog-detail.html">
+          Continue Reading <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+
+      <div class="blog-card">
+        <div class="card-img">
+          <img src="./assets/blog-03.jpg" alt class="img-fluid" />
+          <p class="blog-date">12 AUG 2025</p>
+        </div>
+        <h1>Style the Wedding Party</h1>
+        <p>
+          Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
+        </p>
+        <a class="btn" href="./blog-detail.html">
+          Continue Reading <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="signup">
+    <div class="signup-container">
+      <h3>SPECIALS SIGN UP</h3>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+        <i class="fa-solid fa-envelope form-icon"></i>
+      </div>
+      <button class="btn bg-black text-white signup-btn">SIGN UP</button>
+    </div>
+  </section>
+
+  <section class="newsletter py-5">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      
+      <!-- CONTACT COLUMN -->
+      <div class="col-12 col-md-4">
+        <div class="contact">
+          <h3 class="fs-5 text-uppercase">Contact Us</h3>
+          <div class="contact-grp d-flex align-items-center mb-3">
+            <i class="fa-solid fa-location-dot me-1 contact-icon"></i>
+            <p class="mb-0">8th floor, 379 Hudson St, New York, NY 10018</p>
+          </div>
+          <div class="contact-grp d-flex align-items-center mb-3">
+            <i class="fa-solid fa-phone me-1 contact-icon"></i>
+            <p class="mb-0">(+1) 96 716 6879</p>
+          </div>
+          <div class="contact-grp d-flex align-items-center mb-3">
+            <i class="fa-solid fa-envelope me-1 contact-icon"></i>
+            <p class="mb-0">contact@site.com</p>
+          </div>
+          <h3 class="fs-5 text-uppercase">Opening Times</h3>
+          <div class="opening-times">
+            <p class="mb-0">09:30 AM - 11:00 PM</p>
+            <p class="mt-2">Every Day</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TWITTER COLUMN -->
+      <div class="col-12 col-md-4">
+        <div class="twitter">
+          <h3 class="fs-5 text-uppercase">Latest Twitter</h3>
+
+          <div class="tweet p-3">
+            <p class="mb-1 text-primary"><i class="fa-brands fa-twitter text-white"></i> @colorlib</p>
+            <p class="mb-1">Activello is a good option. It has a slider built into that displays the featured image in the slider.</p>
+            <a href="https://buff.ly/2zaSfAQ" class="small text-decoration-none">https://buff.ly/2zaSfAQ</a>
+            <p class="date small mb-0 mt-2">21 JAN 2025</p>
+          </div>
+
+          <div class="tweet p-3">
+            <p class="mb-1 text-primary"><i class="fa-brands fa-twitter text-white"></i> @colorlib</p>
+            <p class="mb-1">
+              Activello is a good option. It has a slider built into that displays
+              <a href="https://buff.ly/2zaSfAQ" class="small text-decoration-none">https://buff.ly/2zaSfAQ</a>
+            </p>
+            <p class="date small mb-0 mt-2">21 MAY 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- GALLERY COLUMN -->
+      <div class="col-12 col-md-4">
+        <div class="newsletter-gallery">
+          <h2 class="mb-4 mt-3 fs-5">GALLERY</h2>
+
+          <div class="row g-0 mb-2">
+            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-01.jpg" alt class="img-fluid w-75"></div>
+            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-02.jpg" alt class="img-fluid w-75"></div>
+            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-03.jpg" alt class="img-fluid w-75"></div>
+          </div>
+
+          <div class="row g-0 mb-2">
+            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-05.jpg" alt class="img-fluid w-75"></div>
+            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-06.jpg" alt class="img-fluid w-75"></div>
+            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-07.jpg" alt class="img-fluid w-75"></div>
+          </div>
+
+          <div class="row g-0">
+            <div class="col-4"><img src="./assets/photo-gallery-thumb-09.jpg" alt class="img-fluid w-75"></div>
+            <div class="col-4"><img src="./assets/photo-gallery-thumb-10.jpg" alt class="img-fluid w-75"></div>
+            <div class="col-4"><img src="./assets/photo-gallery-thumb-11.jpg" alt class="img-fluid w-75"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    <div class="social">
+      <a href="#"><i class="fa-solid fa-plane-departure social-icon"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+    </div>
+    <div class="footer-content">
+      <p>
+        @ 2017 Colorlib. 
+        <a href="#">Get The Theme</a>
+      </p>
+    </div>
+    <a href="#top" class="btn"><i class="fa fa-angle-double-up"></i></a>
+  </footer>
+
+  <script src="./vendors/Bootstrap/js/bootstrap.js"></script>
+  <script src="./vendors/font-awesome/js/all.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

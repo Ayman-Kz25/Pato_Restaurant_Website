@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="shortcut icon" href="./assets/favicon.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./reservation.css">
+    <link rel="stylesheet" href="./gallery.css">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="./vendors/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./vendors/font-awesome/css/all.css" />
+</head>
+
+<body id="top">
+
+    <!-- Spinner -->
+<div class="spinner-overlay" id="page-spinner">
+  <div class="spinner-border text-primary fs-6" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <nav class="navbar navbar-expand-lg position-relative">
+                <div class="container-fluid justify-content-center">
+                    <div class="navbar-brand">
+                        <img src="./assets/logo.png" alt />
+                    </div>
+                    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-icons d-flex">
+                        <a href="#"><i class="fa-solid fa-plane-departure social-icon"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+                    </div>
+                    <button class="sidebar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-end fade" tabindex="-1" id="sidebarMenu">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./reservation.html" class="active">Reservation</a></li>
+                    </ul>
+
+                    <div class="container gallery-grid">
+                        <div class="gallery-head">
+                            <h2>GALLERY</h2>
+                        </div>
+                        <div class="row img-grid">
+                            <img src="./assets/photo-gallery-thumb-01.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-02.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-03.jpg" alt class="img-fluid gallery-img" />
+                        </div>
+                        <div class="row img-grid">
+                            <img src="./assets/photo-gallery-thumb-05.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-06.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-07.jpg" alt class="img-fluid gallery-img" />
+                        </div>
+                        <div class="row img-grid">
+                            <img src="./assets/photo-gallery-thumb-09.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-10.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-11.jpg" alt class="img-fluid gallery-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <img src="./assets/bg-title-page-03.jpg" alt class="img-fluid" />
+            <h1>Blog</h1>
+        </div>
+    </section>
+
+    <section class="divider">
+        <h4>
+            <a href="./index.html">HOME</a> / <span>BLOG</span>
+        </h4>
+    </section>
+
+    <section class="blog">
+        <div class="container blog-container">
+            <div class="row position-relative">
+                <!-- Left Side -->
+                <div class="blog-left col-12 col-lg-8">
+                    <!-- Blog 01 -->
+                    <div class="blog-card  w-100">
+                        <div class="img-box">
+                            <img class="img-fluid" src="./assets/blog-05.jpg" alt="">
+                            <div class="date-banner">
+                                <h2>28</h2>
+                                <h5>June, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <a href="./blog-detail.html" class="blog-title blog-link"  data-id="1">Cooking recipe Delicious</a>
+                            <h6>by Admin |
+                                28 June, 2025 |
+                                Cooking, Food |
+                                8 Comments</h6>
+                            <p>Explore simple steps to craft flavorful dishes using fresh ingredients and easy techniques for a heartwarming homemade meal.</p>
+                            <a class="btn blog-link" data-id="1" href="./blog-detail.html">
+                                Continue Reading <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog 02 -->
+                    <div class="blog-card  w-100">
+                        <div class="img-box">
+                            <img class="img-fluid" src="./assets/blog-06.jpg" alt="">
+                            <div class="date-banner">
+                                <h2>20</h2>
+                                <h5>July, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <a href="./blog-detail.html" class="blog-title blog-link"  data-id="2">Pizza is prepared fresh</a>
+                            <h6>by Admin |
+                                20 July, 2025 |
+                                Cooking, Food |
+                                5 Comments</h6>
+                            <p>Learn how to make fresh, cheesy pizza with simple ingredients and pro tips for that perfect crispy crust.</p>
+                            <a class="btn blog-link" data-id="2" href="./blog-detail.html">
+                                Continue Reading <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog 03 -->
+                    <div class="blog-card  w-100">
+                        <div class="img-box">
+                            <img class="img-fluid" src="./assets/blog-04.jpg" alt="">
+                            <div class="date-banner">
+                                <h2>16</h2>
+                                <h5>Aug, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <a href="./blog-detail.html" class="blog-title blog-link"  data-id="3">Style the Wedding Party</a>
+                            <h6>by Admin |
+                                16 August, 2025 |
+                                Event, Style |
+                                10 Comments</h6>
+                            <p>Turn your wedding into a stylish celebration with creative food, décor, and elegant design ideas that impress every guest.</p>
+                            <a class="btn blog-link" data-id="3" href="./blog-detail.html">
+                                Continue Reading <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog 04 -->
+                    <div class="blog-card  w-100">
+                        <div class="img-box">
+                            <img class="img-fluid" src="./assets/blog-10.jpg" alt="">
+                            <div class="date-banner">
+                                <h2>15</h2>
+                                <h5>Sep, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <a href="./blog-detail.html" class="blog-title blog-link"  data-id="4">Best Places for Wines</a>
+                            <h6>by Admin |
+                                15 September, 2025 |
+                                Travel, Wine |
+                                3 Comments</h6>
+                            <p>Discover scenic wine destinations and hidden vineyards offering rich flavors, unique stories, and unforgettable tasting experiences.</p>
+                            <a class="btn blog-link" data-id="4" href="./blog-detail.html">
+                                Continue Reading <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog 05 -->
+                    <div class="blog-card  w-100">
+                        <div class="img-box">
+                            <img class="img-fluid" src="./assets/blog-07.jpg" alt="">
+                            <div class="date-banner">
+                                <h2>12</h2>
+                                <h5>Feb, 2025</h5>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <a href="./blog-detail.html" class="blog-title blog-link"  data-id="5">Eggs and Cheese</a>
+                            <h6>by Admin |
+                                12 February, 2025 |
+                                Cooking, Breakfast |
+                                7 Comments</h6>
+                            <p>Enjoy easy-to-make desserts that blend flavor, texture, and beauty—perfect for every sweet craving.</p>
+                            <a class="btn blog-link" data-id="5" href="./blog-detail.html">
+                                Continue Reading <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="blog-right col-12 col-lg-4">
+                    <div class="blog-search">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" aria-describedby="search" placeholder="Search">
+                            <button class="btn" type="button" id="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <h3>CATEGORIES</h3>
+                        <ul class="list">
+                            <li class="list-item"><a href="#" class="text-dark">Cooking recipe</a></li>
+                            <li class="list-item"><a href="#" class="text-dark">Delicious foods</a></li>
+                            <li class="list-item"><a href="#" class="text-dark">Events Design</a></li>
+                            <li class="list-item"><a href="#" class="text-dark">Restaurant Place</a></li>
+                            <li class="list-item"><a href="#" class="text-dark">WordPress</a></li>
+                        </ul>
+                    </div>
+                    <div class="popular-blogs">
+                        <h3>Most Popular</h3>
+
+                        <!-- Popular Blog 01 -->
+                        <div class="blog-post">
+                            <div class="pop-img">
+                                <a href="#"><img class="img-fluid" src="./assets/blog-11.jpg" alt=""></img></a>
+                            </div>
+                            <div class="pop-info">
+                                <a href="./blog-detail.html" class="blog-title mb-1">Best Places for Wine</a>
+                                <p><small>3 days ago</small></p>
+                            </div>
+                        </div>
+
+                        <!-- Popular Blog 02 -->
+                        <div class="blog-post">
+                            <div class="pop-img">
+                                <a href="#"><img class="img-fluid" src="./assets/blog-12.jpg" alt=""></img></a>
+                            </div>
+                            <div class="pop-info">
+                                <a href="./blog-detail.html" class="blog-title mb-1">Eggs and Cheese</a>
+                                <p><small>July 2, 2025</small></p>
+                            </div>
+                        </div>
+
+                        <!-- Popular Blog 03 -->
+                        <div class="blog-post">
+                            <div class="pop-img">
+                                <a href="#"><img class="img-fluid" src="./assets/blog-13.jpg" alt=""></img></a>
+                            </div>
+                            <div class="pop-info">
+                                <a href="./blog-detail.html" class="blog-title mb-1">Style the Wedding Party</a>
+                                <p><small>May 28, 2025</small></p>
+                            </div>
+                        </div>
+
+                        <!-- Popular Blog 04 -->
+                        <div class="blog-post">
+                            <div class="pop-img">
+                                <a href="#"><img class="img-fluid" src="./assets/blog-14.jpg" alt=""></img></a>
+                            </div>
+                            <div class="pop-info">
+                                <a href="./blog-detail.html" class="blog-title mb-1">Cooking recipe Delicious</a>
+                                <p><small>May 25, 2025</small></p>
+                            </div>
+                        </div>
+
+                        <!-- Popular Blog 04 -->
+                        <div class="blog-post">
+                            <div class="pop-img">
+                                <a href="#"><img class="img-fluid" src="./assets/blog-15.jpg" alt=""></img></a>
+                            </div>
+                            <div class="pop-info">
+                                <a href="./blog-detail.html" class="blog-title mb-1">Pizza is prepared fresh</a>
+                                <p><small>May 2, 2025</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="archive-blog">
+                        <h3>Archive</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                July 2025
+                                <span>(9)</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                June 2025
+                                <span>(39)</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                May 2025
+                                <span>(29)</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                April 2025
+                                <span>(35)</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                March 2025
+                                <span>(22)</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                February 2025
+                                <span>(32)</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                January 2025
+                                <span>(21)</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Decembar 2024
+                                <span>(26)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="newsletter py-5">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+
+                <!-- CONTACT COLUMN -->
+                <div class="col-12 col-md-4">
+                    <div class="contact">
+                        <h3 class="fs-5 text-uppercase">Contact Us</h3>
+                        <div class="contact-grp d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-location-dot me-1 contact-icon"></i>
+                            <p class="mb-0">8th floor, 379 Hudson St, New York, NY 10018</p>
+                        </div>
+                        <div class="contact-grp d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-phone me-1 contact-icon"></i>
+                            <p class="mb-0">(+1) 96 716 6879</p>
+                        </div>
+                        <div class="contact-grp d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-envelope me-1 contact-icon"></i>
+                            <p class="mb-0">contact@site.com</p>
+                        </div>
+                        <h3 class="fs-5 text-uppercase">Opening Times</h3>
+                        <div class="opening-times">
+                            <p class="mb-0">09:30 AM - 11:00 PM</p>
+                            <p class="mt-2">Every Day</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TWITTER COLUMN -->
+                <div class="col-12 col-md-4">
+                    <div class="twitter">
+                        <h3 class="fs-5 text-uppercase">Latest Twitter</h3>
+
+                        <div class="tweet p-3">
+                            <p class="mb-1 text-primary"><i class="fa-brands fa-twitter text-white"></i> @colorlib</p>
+                            <p class="mb-1">Activello is a good option. It has a slider built into that displays the
+                                featured image in the slider.</p>
+                            <a href="https://buff.ly/2zaSfAQ"
+                                class="small text-decoration-none">https://buff.ly/2zaSfAQ</a>
+                            <p class="date small mb-0 mt-2">21 JAN 2025</p>
+                        </div>
+
+                        <div class="tweet p-3">
+                            <p class="mb-1 text-primary"><i class="fa-brands fa-twitter text-white"></i> @colorlib</p>
+                            <p class="mb-1">
+                                Activello is a good option. It has a slider built into that displays
+                                <a href="https://buff.ly/2zaSfAQ"
+                                    class="small text-decoration-none">https://buff.ly/2zaSfAQ</a>
+                            </p>
+                            <p class="date small mb-0 mt-2">21 MAY 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GALLERY COLUMN -->
+                <div class="col-12 col-md-4">
+                    <div class="newsletter-gallery">
+                        <h2 class="mb-4 mt-3 fs-5">GALLERY</h2>
+
+                        <div class="row g-0 mb-2">
+                            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-01.jpg" alt
+                                    class="img-fluid w-75"></div>
+                            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-02.jpg" alt
+                                    class="img-fluid w-75"></div>
+                            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-03.jpg" alt
+                                    class="img-fluid w-75"></div>
+                        </div>
+
+                        <div class="row g-0 mb-2">
+                            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-05.jpg" alt
+                                    class="img-fluid w-75"></div>
+                            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-06.jpg" alt
+                                    class="img-fluid w-75"></div>
+                            <div class="col-4 mb-2"><img src="./assets/photo-gallery-thumb-07.jpg" alt
+                                    class="img-fluid w-75"></div>
+                        </div>
+
+                        <div class="row g-0">
+                            <div class="col-4"><img src="./assets/photo-gallery-thumb-09.jpg" alt
+                                    class="img-fluid w-75"></div>
+                            <div class="col-4"><img src="./assets/photo-gallery-thumb-10.jpg" alt
+                                    class="img-fluid w-75"></div>
+                            <div class="col-4"><img src="./assets/photo-gallery-thumb-11.jpg" alt
+                                    class="img-fluid w-75"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa-solid fa-plane-departure social-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+        </div>
+        <div class="footer-content">
+            <p>
+                @ 2017 Colorlib.
+                <a href="#">Get The Theme</a>
+            </p>
+        </div>
+        <a href="#top" class="btn"><i class="fa fa-angle-double-up"></i></a>
+    </footer>
+
+    <script src="./vendors/Bootstrap/js/bootstrap.js"></script>
+    <script src="./vendors/font-awesome/js/all.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

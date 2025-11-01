@@ -1,0 +1,510 @@
+.hero {
+    height: auto;
+    z-index: 1;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-container img {
+  width: 100%;
+  height: 73vh;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 3.1rem;
+  font-weight: 700;
+  z-index: 10;
+}
+
+/* ======= Main Menu Section ======= */
+.menu {
+  background: #fff;
+  position: relative;
+  height: 140vh;
+  z-index: 1;
+}
+
+.menu h4 {
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.2rem;
+}
+
+.menu-item {
+  margin-bottom: 1rem;
+}
+
+.menu-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-top .dots {
+  flex-grow: 1;
+  border-bottom: 3px dotted #ccc;
+  margin: 0 10px;
+  height: 1px;
+}
+
+.menu-top .item-title {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #444;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.menu-top .item-price {
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #222;
+  white-space: nowrap;
+}
+
+.menu-item .item-desc {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: left;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+/* ======= Lunch Section ======= */
+.lunch-intro {
+  height: 50vh;
+  background: url(./assets/header-menu-01.jpg) center center / cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.lunch-intro-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin: 0 auto;
+}
+
+.lunch-menu {
+  position: relative;
+  background: #fff;
+  min-height: 80vh;
+  z-index: 1;
+}
+
+.lunch-container {
+  padding: 2.5rem 7rem;
+}
+
+.lunch-item {
+  align-items: center;
+}
+
+.lunch-info {
+  padding-left: 10px;
+}
+
+.lunch-info .item-title {
+  display: block;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+
+.lunch-info .item-title:hover {
+  color: #ec1d25;
+}
+
+.lunch-info .item-desc {
+  font-size: 0.85rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.lunch-info .item-price {
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+/* ======= Dinner Section ======= */
+.dinner-intro {
+  height: 50vh;
+  background: url(./assets/header-menu-02.jpg) center center / cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.dinner-intro-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin: 0 auto;
+}
+
+.dinner-menu {
+  position: relative;
+  background: #fff;
+  height: 80vh;
+  z-index: 1;
+}
+
+.dinner-container {
+  padding: 2.5rem 7rem;
+}
+
+.dinner-item {
+  align-items: center;
+}
+
+.dinner-info {
+  padding-left: 10px;
+}
+
+.dinner-info .item-title {
+  display: block;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+
+.dinner-info .item-title:hover {
+  color: #ec1d25;
+}
+
+.dinner-info .item-desc {
+  font-size: 0.85rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.dinner-info .item-price {
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+.dinner-img,
+.lunch-img {
+  position: relative;
+  overflow: hidden;
+  width: 160px;
+  height: 120px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.dinner-img img,
+.lunch-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 12px;
+}
+
+.dinner-img:hover img,
+.lunch-img:hover img {
+  transform:scale(1.1);
+}
+
+/* =======================
+   RESPONSIVE ENHANCEMENTS (Smart Scaling)
+======================= */
+
+/* ----- Large Tablets / Small Laptops (≤1200px) ----- */
+@media (max-width: 1200px) {
+  .hero-container img {
+    height: 70vh;
+  }
+
+  .hero-container h1 {
+    font-size: 2.8rem;
+    letter-spacing: 5px;
+  }
+
+  .menu {
+    height: auto;
+  }
+
+  .menu-top .item-title {
+    font-size: 1rem;
+  }
+
+  .menu-top .item-price {
+    font-size: 1.1rem;
+  }
+
+  .lunch-img,
+  .dinner-img {
+    width: 180px;
+    height: 130px;
+  }
+}
+
+/* ----- Tablets (≤992px) ----- */
+@media (max-width: 992px) {
+  .hero-container img {
+    height: 65vh;
+  }
+
+  .hero-container h1 {
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+  }
+
+  .menu {
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .menu h4 {
+    font-size: 1.3rem;
+  }
+
+  .menu-top .item-title {
+    font-size: 1rem;
+  }
+
+  .menu-top .item-price {
+    font-size: 1.1rem;
+  }
+
+  .menu-item .item-desc {
+    font-size: 0.95rem;
+  }
+
+  .dinner-menu {
+    height: auto;
+    min-height: 80vh; /* keeps some breathing room, but flexible */
+  }
+
+  .lunch-intro-content h1,
+  .dinner-intro-content h1 {
+    font-size: 3rem;
+    letter-spacing: 6px;
+  }
+
+  .lunch-img,
+  .dinner-img {
+    width: 160px;
+    height: 120px;
+  }
+
+  .lunch-info .item-price,
+  .dinner-info .item-price {
+    font-size: 1.3rem;
+  }
+}
+
+/* ----- Medium Tablets / Landscape Phones (≤768px) ----- */
+@media (max-width: 768px) {
+  .hero-container img {
+    height: 60vh;
+  }
+
+  .hero-container h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+
+  .menu {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .menu h4 {
+    font-size: 1.2rem;
+  }
+
+  .menu-top .item-title {
+    font-size: 0.95rem;
+  }
+
+  .menu-top .item-price {
+    font-size: 1rem;
+  }
+
+  .menu-item .item-desc {
+    font-size: 0.85rem;
+  }
+
+  .lunch-container,
+  .dinner-container {
+    padding: 1.5rem 2rem;
+  }
+
+  .lunch-img,
+  .dinner-img {
+    width: 140px;
+    height: 110px;
+  }
+
+  .lunch-intro,
+  .dinner-intro {
+    height: 45vh;
+    background-attachment: scroll;
+  }
+
+  .lunch-intro-content h1,
+  .dinner-intro-content h1 {
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+  }
+
+  .lunch-info .item-price,
+  .dinner-info .item-price {
+    font-size: 1.2rem;
+  }
+}
+
+/* ----- Mobile (≤576px) ----- */
+@media (max-width: 576px) {
+  .hero-container img {
+    height: 55vh;
+  }
+
+  .hero-container h1 {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .menu {
+    padding: 2rem 1rem;
+  }
+
+  .menu h4 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .menu-top .item-title {
+    font-size: 0.9rem;
+  }
+
+  .menu-top .item-price {
+    font-size: 0.95rem;
+  }
+
+  .menu-item .item-desc {
+    font-size: 0.85rem;
+  }
+
+  .lunch-container,
+  .dinner-container {
+    padding: 1rem;
+  }
+
+  .lunch-img,
+  .dinner-img {
+    width: 120px;
+    height: 90px;
+  }
+
+  .lunch-intro,
+  .dinner-intro {
+    height: 40vh;
+  }
+
+  .lunch-intro-content h1,
+  .dinner-intro-content h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+
+  .lunch-info .item-price,
+  .dinner-info .item-price {
+    font-size: 1.1rem;
+  }
+}
+
+/* ----- Extra Small Devices (≤400px) ----- */
+@media (max-width: 400px) {
+  .hero-container img {
+    height: 50vh;
+  }
+
+  .hero-container h1 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  .menu h4 {
+    font-size: 1rem;
+  }
+
+  .menu-top .item-title {
+    font-size: 0.85rem;
+  }
+
+  .menu-item .item-desc {
+    font-size: 0.8rem;
+  }
+
+  .lunch-img,
+  .dinner-img {
+    width: 100px;
+    height: 80px;
+  }
+
+  .lunch-info .item-price,
+  .dinner-info .item-price {
+    font-size: 1rem;
+  }
+
+  .lunch-intro,
+  .dinner-intro {
+    height: 35vh;
+  }
+
+  .lunch-intro-content h1,
+  .dinner-intro-content h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+}

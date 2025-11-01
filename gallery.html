@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="shortcut icon" href="./assets/favicon.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./menu.css" />
+    <link rel="stylesheet" href="./reservation.css">
+    <link rel="stylesheet" href="./gallery.css" />
+    <link rel="stylesheet" href="./vendors/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./vendors/font-awesome/css/all.css" />
+</head>
+
+<body id="top">
+
+    <!-- Spinner -->
+    <div class="spinner-overlay" id="page-spinner">
+        <div class="spinner-border text-primary fs-6" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <nav class="navbar navbar-expand-lg position-relative">
+                <div class="container-fluid justify-content-center">
+                    <div class="navbar-brand">
+                        <img src="./assets/logo.png" alt />
+                    </div>
+                    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" aria-current="page" href="./menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-icons d-flex">
+                        <a href="#"><i class="fa-solid fa-plane-departure social-icon"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+                    </div>
+                    <button class="sidebar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-end fade" tabindex="-1" id="sidebarMenu">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li>
+                            <a href="./reservation.html" class="active">Reservation</a>
+                        </li>
+                    </ul>
+
+                    <div class="container gallery-grid">
+                        <div class="gallery-head">
+                            <h2>GALLERY</h2>
+                        </div>
+                        <div class="row img-grid">
+                            <img src="./assets/photo-gallery-thumb-01.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-02.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-03.jpg" alt class="img-fluid gallery-img" />
+                        </div>
+                        <div class="row img-grid">
+                            <img src="./assets/photo-gallery-thumb-05.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-06.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-07.jpg" alt class="img-fluid gallery-img" />
+                        </div>
+                        <div class="row img-grid">
+                            <img src="./assets/photo-gallery-thumb-09.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-10.jpg" alt class="img-fluid gallery-img" />
+                            <img src="./assets/photo-gallery-thumb-11.jpg" alt class="img-fluid gallery-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <img src="./assets/bg-title-page-02.jpg" alt class="img-fluid" />
+            <h1>Gallery</h1>
+        </div>
+    </section>
+
+    <section class="gallery py-5 pt-5">
+        <div class="container gallery-container p-4">
+            <div class="btns d-flex justify-content-center align-items-center p-5">
+                <a href="#" class="btn active">All Photo</a>
+                <a href="./gallery.html #interior" class="btn">Interior</a>
+                <a href="./gallery.html" class="btn">Food</a>
+                <a href="./gallery.html" class="btn">Events</a>
+                <a href="./gallery.html" class="btn">VIP Guests</a>
+            </div>
+            <div class="row gallery-grid">
+                <!-- Left Column -->
+                <div class="col-md-4">
+
+                    <!-- Img 01 -->
+                    <div class="gallery-img my-5">
+                        <div class="img-wrapper">
+                            <img class="img-fluid" src="./assets/photo-gallery-13.jpg" alt>
+                            <div class="overlay">
+                                <a href="./assets/photo-gallery-13.jpg" class="icon" data-bs-toggle="modal"
+                                    data-bs-target="#imgModal">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Img 02 -->
+                    <div class="gallery-img my-5">
+                        <div class="img-wrapper">
+                            <img class="img-fluid" src="./assets/photo-gallery-16.jpg" alt>
+                            <div class="overlay">
+                                <a href="./assets/photo-gallery-16.jpg" class="icon" data-bs-toggle="modal"
+                                    data-bs-target="#imgModal">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Img 03 -->
+                    <div class="gallery-img my-5">
+                        <div class="img-wrapper">
+                            <img class="img-fluid" src="./assets/photo-gallery-19.jpg" alt>
+                            <div class="overlay">
+                                <a href="./assets/photo-gallery-19.jpg" class="icon" data-bs-toggle="modal"
+                                    data-bs-target="#imgModal">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mid Column -->
+                <div class="col-md-4">
+
+                    <!-- Img 01 -->
+                    <div class="gallery-img my-5">
+                        <div class="img-wrapper">
+                            <img class="img-fluid" src="./assets/photo-gallery-14.jpg" alt>
+                            <div class="overlay">
+                                <a href="./assets/photo-gallery-14.jpg" class="icon" data-bs-toggle="modal"
+                                    data-bs-target="#imgModal">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Img 02 -->
+                    <div class="gallery-img my-5">
+                        <div class="img-wrapper">
+                            <img class="img-fluid" src="./assets/photo-gallery-17.jpg" alt>
+                            <div class="overlay">
+                                <a href="./assets/photo-gallery-17.jpg" class="icon" data-bs-toggle="modal"
+                                    data-bs-target="#imgModal">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Img 03 -->
+                    <div class="gallery-img my-5">
+                        <div class="img-wrapper">
+                            <img class="img-fluid" src="./assets/photo-gallery-20.jpg" alt>
+                            <div class="overlay">
+                                <a href="./assets/photo-gallery-20.jpg" class="icon" data-bs-toggle="modal"
+                                    data-bs-target="#imgModal">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left Column -->
+                <div class="col-md-4">
+
+                    <!-- Img 01 -->
+                    <div class="gallery-img my-5">
+                        <div class="img-wrapper">
+                            <img class="img-fluid" src="./assets/photo-gallery-15.jpg" alt>
+                            <div class="overlay">
+                                <a href="./assets/photo-gallery-15.jpg" class="icon" data-bs-toggle="modal"
+                                    data-bs-target="#imgModal">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Img 02 -->
+                    <div class="gallery-img my-5">
+                        <div class="img-wrapper">
+                            <img class="img-fluid" src="./assets/photo-gallery-18.jpg" alt>
+                            <div class="overlay">
+                                <a href="./assets/photo-gallery-18.jpg" class="icon" data-bs-toggle="modal"
+                                    data-bs-target="#imgModal">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Img 03 -->
+                    <div class="gallery-img my-5">
+                        <div class="img-wrapper">
+                            <img class="img-fluid" src="./assets/photo-gallery-21.jpg" alt>
+                            <div class="overlay">
+                                <a href="./assets/photo-gallery-21.jpg" class="icon" data-bs-toggle="modal"
+                                    data-bs-target="#imgModal">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="num-row d-flex justify-content-center align-items-center p-2">
+                <a href="./gallery.html" class="num mx-2 px-3 py-2 rounded-circle active">1</a>
+                <a href="./gallery.html" class="num mx-2 px-3 py-2 rounded-circle">2</a>
+                <a href="./gallery.html" class="num mx-2 px-3 py-2 rounded-circle">3</a>
+            </div>
+    </section>
+
+    <!-- Image Popup Modal -->
+    <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-2"
+                    data-bs-dismiss="modal"></button>
+                <img id="modalImg" src alt="Popup Image" class="img-fluid rounded-3">
+            </div>
+        </div>
+    </div>
+
+    <section class="signup">
+        <div class="signup-container">
+            <h3>SPECIALS SIGN UP</h3>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                <label for="floatingInput">Email address</label>
+                <i class="fa-solid fa-envelope form-icon"></i>
+            </div>
+            <button class="btn bg-black text-white signup-btn">SIGN
+                UP</button>
+        </div>
+    </section>
+
+    <section class="newsletter py-5">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <!-- CONTACT COLUMN -->
+                <div class="col-12 col-md-4">
+                    <div class="contact">
+                        <h3 class="fs-5 text-uppercase">Contact Us</h3>
+                        <div class="contact-grp d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-location-dot me-1 contact-icon"></i>
+                            <p class="mb-0">8th floor, 379 Hudson St,
+                                New York, NY
+                                10018</p>
+                        </div>
+                        <div class="contact-grp d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-phone me-1 contact-icon"></i>
+                            <p class="mb-0">(+1) 96 716 6879</p>
+                        </div>
+                        <div class="contact-grp d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-envelope me-1 contact-icon"></i>
+                            <p class="mb-0">contact@site.com</p>
+                        </div>
+                        <h3 class="fs-5 text-uppercase">Opening
+                            Times</h3>
+                        <div class="opening-times">
+                            <p class="mb-0">09:30 AM - 11:00 PM</p>
+                            <p class="mt-2">Every Day</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TWITTER COLUMN -->
+                <div class="col-12 col-md-4">
+                    <div class="twitter">
+                        <h3 class="fs-5 text-uppercase">Latest
+                            Twitter</h3>
+
+                        <div class="tweet p-3">
+                            <p class="mb-1 text-primary">
+                                <i class="fa-brands fa-twitter text-white"></i>
+                                @colorlib
+                            </p>
+                            <p class="mb-1">
+                                Activello is a good option. It has a
+                                slider built into
+                                that
+                                displays the featured image in the
+                                slider.
+                            </p>
+                            <a href="https://buff.ly/2zaSfAQ"
+                                class="small text-decoration-none">https://buff.ly/2zaSfAQ</a>
+                            <p class="date small mb-0 mt-2">21 JAN
+                                2025</p>
+                        </div>
+
+                        <div class="tweet p-3">
+                            <p class="mb-1 text-primary">
+                                <i class="fa-brands fa-twitter text-white"></i>
+                                @colorlib
+                            </p>
+                            <p class="mb-1">
+                                Activello is a good option. It has a
+                                slider built into
+                                that
+                                displays
+                                <a href="https://buff.ly/2zaSfAQ"
+                                    class="small text-decoration-none">https://buff.ly/2zaSfAQ</a>
+                            </p>
+                            <p class="date small mb-0 mt-2">21 MAY
+                                2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GALLERY COLUMN -->
+                <div class="col-12 col-md-4">
+                    <div class="newsletter-gallery">
+                        <h2 class="mb-4 mt-3 fs-5">GALLERY</h2>
+
+                        <div class="row g-0 mb-2">
+                            <div class="col-4 mb-2">
+                                <img src="./assets/photo-gallery-thumb-01.jpg" alt class="img-fluid w-75" />
+                            </div>
+                            <div class="col-4 mb-2">
+                                <img src="./assets/photo-gallery-thumb-02.jpg" alt class="img-fluid w-75" />
+                            </div>
+                            <div class="col-4 mb-2">
+                                <img src="./assets/photo-gallery-thumb-03.jpg" alt class="img-fluid w-75" />
+                            </div>
+                        </div>
+
+                        <div class="row g-0 mb-2">
+                            <div class="col-4 mb-2">
+                                <img src="./assets/photo-gallery-thumb-05.jpg" alt class="img-fluid w-75" />
+                            </div>
+                            <div class="col-4 mb-2">
+                                <img src="./assets/photo-gallery-thumb-06.jpg" alt class="img-fluid w-75" />
+                            </div>
+                            <div class="col-4 mb-2">
+                                <img src="./assets/photo-gallery-thumb-07.jpg" alt class="img-fluid w-75" />
+                            </div>
+                        </div>
+
+                        <div class="row g-0">
+                            <div class="col-4">
+                                <img src="./assets/photo-gallery-thumb-09.jpg" alt class="img-fluid w-75" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./assets/photo-gallery-thumb-10.jpg" alt class="img-fluid w-75" />
+                            </div>
+                            <div class="col-4">
+                                <img src="./assets/photo-gallery-thumb-11.jpg" alt class="img-fluid w-75" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa-solid fa-plane-departure social-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+        </div>
+        <div class="footer-content">
+            <p>
+                @ 2017 Colorlib.
+                <a href="#">Get The Theme</a>
+            </p>
+        </div>
+        <a href="#top" class="btn"><i class="fa fa-angle-double-up"></i></a>
+    </footer>
+
+    <script src="./vendors/Bootstrap/js/bootstrap.js"></script>
+    <script src="./vendors/font-awesome/js/all.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

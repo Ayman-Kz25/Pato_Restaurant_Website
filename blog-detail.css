@@ -1,0 +1,171 @@
+.comment-box {
+    margin: 5rem 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.comment-box h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.comment-box .form-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: px;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+.comment-box .form-control {
+    border: 2.5px solid #ddd !important;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    box-shadow: none !important;
+    outline: none !important;
+    margin-bottom: 1rem;
+    transition: border 0.2s ease-in-out;
+}
+
+.comment-box textarea.form-control {
+    min-height: 140px;
+    max-height: 360px;
+    resize: vertical;
+}
+
+.comment-box input {
+    width: 40%;
+}
+
+.comment-box .form-control:focus {
+    border: 2.5px solid #ec1d25 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.comment-box .mb-3 {
+    margin-bottom: 16px;
+}
+
+.comment-box .btn {
+    background: #000;
+    color: #fff;
+    padding: 12px 32px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.comment-box .btn:hover {
+    background: #ec1d25;
+    color: #fff;
+    outline: none;
+}
+
+.comment-box .required-note {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+    .comment-box {
+        padding: 34px;
+        margin: 2rem 0;
+    }
+
+    .comment-box h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .comment-box {
+        padding: 28px;
+    }
+
+    .comment-box .form-control {
+        padding: 12px 14px;
+        font-size: 0.98rem;
+    }
+
+    .comment-box textarea.form-control {
+        min-height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .comment-box {
+        padding: 22px;
+        margin: 1.6rem 0;
+        border-radius: 10px;
+    }
+
+    .comment-box h1 {
+        font-size: 1.45rem;
+    }
+
+    .comment-box .btn {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .comment-box {
+        padding: 18px;
+        margin: 1.2rem 0;
+    }
+
+    .comment-box h1 {
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+    }
+
+    .comment-box #help {
+        font-size: 0.85rem;
+    }
+
+    .comment-box .form-control {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .comment-box textarea.form-control {
+        min-height: 110px;
+    }
+}
+
+@media (max-width: 440px) {
+    .comment-box {
+        padding: 14px;
+        border-radius: 8px;
+    }
+
+    .comment-box .form-control {
+        font-size: 0.92rem;
+    }
+
+    .comment-box h1 {
+        font-size: 1.15rem;
+    }
+
+    .comment-box .btn {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
